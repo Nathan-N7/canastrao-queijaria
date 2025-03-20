@@ -42,6 +42,7 @@ typedef struct s_table
 
 long    time(void);
 void    monitoring(void *arg);
+void    dinner(t_philo  *philo);
 
 
 #endif
