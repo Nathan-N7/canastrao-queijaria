@@ -58,6 +58,15 @@ int starting_thread(t_table *table)
     i = -1;
     philos = table->philos;
     table->tm_start = time();
-    pthread_creat(&table->monitor, NULL, monitoring, table);
-    while ();
+    while (++i < table->philo_nbr)
+    {
+        pthread_mutex_lock(&table->philos[i].lock);
+        philos[i].last_meal = table->tm_start;
+        pthread_mutex_unlock(&table->philos[i].lock);
+        pthread_creat(&philos[i].thread, NULL, dinner, &philos[i]);
+    }
+    i = -1;
+    while (++i < table->philo_nbr)
+        pthread_join(philos[i].thread, NULL);
+    return (0);
 }

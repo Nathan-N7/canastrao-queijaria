@@ -27,4 +27,26 @@ void    eat(t_philo *philo)
     pthread_mutex_lock(&philo->lock);
     philo->last_meal = time();
     pthread_mutex_unlock(&philo->lock);
+    usleep(philo->table->time_eats * 1000);
+    pthread_mutex_unlock(philo->right_fork);
+    pthread_mutex_unlock(philo->left_fork);
+}
+
+void    philo_sleep(t_philo *philo)
+{
+    if  (!has_dead(philo->table))
+    {
+        printf("%ld %d is sleeping\n", time() - philo->table->tm_start, philo->id); 
+        usleep(philo->table->tm_sleep * 1000);
+    }
+}
+
+void    think(t_philo *philo)
+{
+    if (!has_dead(philo->table))
+    {
+        printf("%ld %d is thinking\n", time() - philo->table->tm_start, philo->id);
+        if (philo->table->time_die - (philo->table->time_eats + philo->table->tm_sleep) > 10)
+            usleep(((philo->table->time_die - (philo->table->time_eats + philo->table->tm_sleep)) * 1000) - 10000);
+    }
 }
