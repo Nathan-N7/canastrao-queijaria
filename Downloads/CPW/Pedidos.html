@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos - Canastrão</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Stoke&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="CanastraoLogoTopo.png" alt="Logo Topo">
+        <address class="ender">
+            Rua dos Queijos, 123<br>
+            Tel: (21) 9876-5432<br>
+            Email: contato@canastrão.com.br
+        </address>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="CanastraoQueijos.html" target="_blank">Apresentação</a></li>
+            <li><a href="Queijos.html" target="_blank">Queijos</a></li>
+            <li><a href="Harmonizacao.html" target="_blank">Harmonização</a></li>
+            <li><a href="Pedidos.html" target="_blank">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="divCompras">
+            <h3 style="margin: 0 0 15px 10px;">Compras</h3>
+            <form>
+                <fieldset class="fsEsq">
+                    <legend>Identificação</legend>
+                    <div style="margin-bottom: 10px;">
+                        <label class="colPriPag">Nome:</label>
+                        <input class="impGrande" type="text" name="nome">
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <label class="colPriPag">Email:</label>
+                        <input class="impGrande" type="email" name="email">
+                    </div>
+                    <div style="float: left; width: 50%;">
+                        <label class="colPriPag">Endereço:</label><br>
+                        <textarea class="impEnder" name="endereco" rows="3"></textarea><br>
+                        <label class="colPriPag">Telefone:</label>
+                        <input class="impTelef" type="tel" name="telefone"><br>
+                        <label class="colPriPag">Celular:</label>
+                        <input class="impTelef" type="tel" name="celular">
+                    </div>
+
+                    <div style="float: right; width: 45%;">
+                        <label class="colPriPag">Gênero:</label><br>
+                        <div style="margin-top: 5px;">
+                            <input type="radio" name="genero" value="Masculino"> Mas
+                            <input type="radio" name="genero" value="Feminino"> Fem
+                            <input type="radio" name="genero" value="Outro"> Outro
+                        </div>
+                        <label class="colPriPag" style="margin-top: 10px;">Nascimento:</label>
+                        <input class="impMedio" type="date" name="nascimento">
+                    </div>
+                </fieldset>
+
+                <fieldset class="fsDir">
+                    <legend>Seleção de Produtos e Pagamento</legend>
+                    <div style="margin-bottom: 15px;">
+                        <label class="colPriCompras">Produto:</label>
+                        <select class="colSelProd" name="produto">
+                            <option>Queijo Canastra (500g)</option>
+                            <option>Queijo Minas (400g)</option>
+                            <option>Queijo Coalho (500g)</option>
+                            <option>Queijo Gorgonzola (200g)</option>
+                            <option>Queijo Brie (200g)</option>
+                        </select>
+                        <input type="button" value="Comprar" style="margin-left: 10px;">
+                    </div>
+
+                    <div class="listaCompras">
+                        <textarea readonly style="width: 100%; height: 110px;"></textarea>
+                        <label>Valor R$:</label>
+                        <input type="text" name="valor" readonly style="width: 100px;">
+                    </div>
+
+                    <fieldset style="border: 2px solid #3366BB; padding: 10px; margin-top: 10px; float: left; width: 60%;">
+                        <legend>Cartão</legend>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <label class="colPriPag" style="margin-right: 5px;">Bandeira:</label>
+                            <input type="radio" name="bandeira" value="Visa"> Visa
+                            <input type="radio" name="bandeira" value="Master"> Master
+                            <input type="radio" name="bandeira" value="Elo"> Elo
+                        </div>
+                        <div style="margin-top: 8px;">
+                            <label class="colPriPag">Validade:</label>
+                            <input type="text" name="mes" placeholder="MM" style="width: 40px;">
+                            <span>/</span>
+                            <input type="text" name="ano" placeholder="AAAA" style="width: 60px;">
+                        </div>
+                        <div style="margin-top: 8px;">
+                            <label class="colPriPag">Número:</label>
+                            <input class="impNCC" type="text" name="numeroCartao">
+                        </div>
+                    </fieldset>
+                </fieldset>
+
+                <div class="botoes">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
