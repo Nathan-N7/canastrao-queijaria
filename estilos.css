@@ -1,0 +1,169 @@
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+}
+section {
+    display: block;
+    width: 70%;
+    float: right;
+}
+
+/* = Estilo Geral = */
+body {
+    background-color: #EEDDAA;
+    color: #3366BB;
+    font-size: 16px;
+    font-family: 'Stoke', 'Lucida Bright', 'Liberation', serif;
+}
+a:link    { color: #2255AA; text-decoration: none; }
+a:visited { color: #2255CC; text-decoration: none; }
+
+/* = Menu = */
+nav ul {
+    line-height: 230%;
+    list-style-type: disc;
+    color: #3366BB;
+    margin-top: 40px;
+}
+
+/* = Header = */
+.ender {
+    float: right;
+    text-align: right;
+    line-height: 140%;
+    font-size: 14px;
+    font-family: 'Karla', 'Verdana', 'Ubuntu', sans-serif;
+}
+.imgLogo {
+    border-bottom: 4px solid #3366BB;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+/* = Apresentação (home) = */
+.apres {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* = Título das subpáginas = */
+.Titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* = Harmonização = */
+.listaQueijo {
+    width: 440px;
+    background-color: #FFFFBB;
+    color: #3366BB;
+    border: 2px solid #3366BB;
+    padding: 10px;
+    margin: 0 auto 10px;
+}
+.procedencia {
+    text-decoration: underline;
+}
+.listaQueijo ul {
+    list-style-type: disc;
+    font-size: 14px;
+    color: #3366BB;
+}
+
+/* = Queijos = */
+.tabQueijo {
+    border-collapse: collapse;
+    margin-top: 6px;
+    font-size: 15px;
+    background-color: #FFFFBB;
+    color: #114499;
+    font-family: 'Karla', 'Verdana', 'Ubuntu', sans-serif;
+}
+.tabQueijo th,
+.tabQueijo td {
+    border: 2px solid #000;
+    padding: 14px 12px;
+}
+.linTH {
+    background-color: #887733;
+    color: #EEEE00;
+    text-align: center;
+    vertical-align: middle;
+}
+.colTH {
+    background-color: #CCBB88;
+    color: #222222;
+    text-align: left;
+}
+.preco {
+    color: #CC0000;
+}
+.imgQueijo {
+    width: 60px;
+    height: 44px;
+}
+
+/* = Pedidos / Formulário = */
+.divCompras {
+    width: 550px;
+    background-color: #FFFFBB;
+    color: #2255AA;
+    padding: 6px 6px 15px 6px;
+    font-size: 12px;
+    margin: 20px auto;
+    border: 2px solid #000;
+}
+.listaCompras {
+    float: right;
+    width: 210px;
+    height: 160px;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.colPri {
+    float: left;
+    width: 90px;
+    display: block;
+}
+.fsEsq {
+    float: left;
+    display: inline;
+    margin: 0;
+}
+.fsDir {
+    float: right;
+    display: inline;
+    margin: 0;
+}
+.inpGrande  { width: 380px; }
+.inpMedio   { width: 80px; }
+.inpNCC     { width: 130px; }
+.inpTelef   { width: 90px; }
+.inpEnder   { width: 180px; height: 50px; }
+.numDD      { width: 30px; }
+.numQD      { width: 50px; }
+.divLinha   { width: 500px; margin-bottom: 6px; }
+.colLabCrd  { width: 260px; height: 40px; float: left; }
+.botoes     { text-align: right; margin: 20px 10px 0 10px; }
+
+.janQueijos {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #FFFFBB;
+    color: #3366BB;
+    font-size: 14px;
+    text-align: center;
+    border: 2px solid #3366BB;
+}
+.janDesc {
+    text-align: left;
+    margin: 10px auto;
+    color: #3366BB;
+}

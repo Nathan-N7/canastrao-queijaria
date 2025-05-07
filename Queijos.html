@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Queijos - Canastrão</title>
+    <base target="_self" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Stoke&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        const queijos = [
+            { tipo: 'Canastra',    peso: '500g', img: 'QueijoCanastra.jpg',    preco: 'R$ 70,00' },
+            { tipo: 'Minas',       peso: '400g', img: 'QueijoMinas.jpg',       preco: 'R$ 23,00' },
+            { tipo: 'Coalho',      peso: '500g', img: 'QueijoCoalho.jpg',      preco: 'R$ 40,00' },
+            { tipo: 'Gorgonzola',  peso: '200g', img: 'QueijoGorgonzola.jpg',  preco: 'R$ 20,00' },
+            { tipo: 'Brie',        peso: '200g', img: 'QueijoBrie.jpg',        preco: 'R$ 30,00' }
+        ];
+
+        function mostraDetalhe(index) {
+            const q = queijos[index];
+            document.getElementById("celDesc").innerHTML = `
+                <img src="${q.img}" alt="${q.tipo}" style="display:block; margin:5px auto; max-height:150px;">
+                <div style="text-align:center;">Peso: ${q.peso}</div>
+                <div style="text-align:center;">Preço: ${q.preco}</div>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="CanastraoLogoTopo.png" alt="Logo Topo">
+        <address class="ender">
+            Av. Gorgonzola, 235<br>
+            Tel: (21) 91235-1235<br>
+            <a href="mailto:contato@canastrao.com.br">contato@canastrao.com.br</a>
+        </address>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="CanastraoQueijos.html">Apresentação</a></li>
+            <li><a href="Queijos.html">Queijos</a></li>
+            <li><a href="Harmonizacao.html">Harmonização</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <table class="tabQueijo">
+            <tr><th class="linTH" colspan="3">QUEIJOS</th></tr>
+            <tr>
+                <th class="linTH">Procedência</th>
+                <th class="linTH menuTab">Tipo</th>
+                <th class="linTH">Descrição</th>
+            </tr>
+
+            <tr>
+                <td rowspan="3" class="colTH">Nacional</td>
+                <td><a href="#" onclick="mostraDetalhe(0)">Canastra</a></td>
+                <td rowspan="5" id="celDesc" style="width:250px; text-align:center;"></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="mostraDetalhe(1)">Minas</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="mostraDetalhe(2)">Coalho</a></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="colTH">Internacional</td>
+                <td><a href="#" onclick="mostraDetalhe(3)">Gorgonzola</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="mostraDetalhe(4)">Brie</a></td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
