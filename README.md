@@ -10,7 +10,7 @@ Consiste em um site simples para uma queijaria fictícia, com foco em apresentar
 
 ## 🎯 Objetivo
 
-Criar um site funcional utilizando **HTML, CSS e JavaScript**, com foco em usabilidade e estética, oferecendo aos visitantes informações sobre a queijaria, catálogo de produtos e a opção de realizar pedidos.
+Criar um site funcional utilizando **HTML, CSS e JavaScript**, oferecendo aos visitantes informações sobre a queijaria, catálogo de produtos e a opção de realizar pedidos.
 
 ## 🛠️ Tecnologias Utilizadas
 
