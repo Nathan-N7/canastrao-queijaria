@@ -1,3 +1,8 @@
+> ⚠️ **Aviso Importante**  
+> Este projeto foi desenvolvido **exclusivamente como trabalho acadêmico**.  
+> As decisões de implementação **não visaram escalabilidade, usabilidade avançada ou boas práticas de produção**, mas sim **seguir exatamente os requisitos propostos pela atividade para fins de avaliação**.  
+> Portanto, aspectos como arquitetura, design e funcionalidades foram feitos **com foco na entrega da disciplina e obtenção da nota**, e não como um produto final ou exemplo de melhores práticas.
+
 # 🧀 Canastrão Queijaria
 
 Este projeto foi desenvolvido como trabalho acadêmico e representa meu **primeiro contato com desenvolvimento web**.  
